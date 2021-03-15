@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AssignmentOne</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <!--card: start-->
+    <div class="card">
+      <div class="card-head tooltip">
+        <span class="tooltip-text"><span class="number">$167</span> still needed for this project</span>
+      </div>
+      <div class="card-body">
+        <p>
+          <span id="dayleft">Only <span class="number">3</span> days left</span>
+          to fund this project
+        </p>
+        <br />
+        <p>
+          Join the <span class="number">42</span> other donors who have
+          already supported this project. Every dollar helps.
+        </p>
+        <div>
+          <input type="number" placeholder="$" name="" max="100" />
+          <button class="btn"><a href="#">Give Now</a></button>
+        </div>
+        <button id="open" class="bottom-text">Why give $50?</button>
+        <div class="modal-container" id="modal_container">
+          <div class="modal">
+            <p>It will be a great help</p>
+            <button id="close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--card: end-->
+    <!--button : start-->
+    <div>
+      <button class="button"><a href="#">Save for later</a></button>
+      <button class="button"><a href="#">Tell your friends</a></button>
+    </div>
+    <!--button : end-->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

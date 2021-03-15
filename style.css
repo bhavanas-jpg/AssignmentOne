@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "rooney-web", 'AmericanTypewriter', Rockwell, serif;
+    line-height: 1.4;
+}
+
+.container {
+    margin: 5em auto;
+    max-width: 630px;
+    text-align: center;
+}
+
+#dayleft {
+    color: #EF5F3C;
+    font-weight: bold;
+}
+
+.card {
+    max-width: 42%;
+    height: 238px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin: auto;
+}
+
+.card-head {
+    height: 15px;
+    background: #EF5F3C;
+    width: 75%;
+    animation: progress-animation 5s forwards;
+    border-bottom: 1px solid #ccc;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 240px;
+    background-color: black;
+    text-align: center;
+    color: #FFF;
+    border-radius: 6px;
+    padding: 10px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 77%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
+@keyframes progress-animation {
+    0% {
+        width: 0%;
+    }
+
+    75% {
+        width: 75%;
+    }
+}
+
+.card-body {
+    padding: 10px;
+    font-size: 15px;
+    color: grey;
+    text-align: left;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff !important;
+}
+
+.btn {
+    padding: 11px 15px 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1CBC2C;
+    margin: 10px;
+    outline: none;
+}
+
+.btn1 {
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="number"] {
+    border: 1px solid #ccc;
+    outline: none;
+    width: 36%;
+    height: 37px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(235, 227, 227);
+    border-radius: 4px;
+}
+
+.number {
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+
+.bottom-text { 
+    color: blue;
+    font-family: 'Akaya Telivigala', cursive;
+    border: none;
+    outline:none;
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(112, 108, 108) !important;
+}
+
+.button {
+    padding: 10px 15px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: rgb(245, 243, 243);
+    cursor: pointer;
+    font-weight: 300;
+    outline: none;
+}
+
+.btn1 #price {
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+/******modal :start*****/
+ .modal-container{
+     background-color: rgba(212, 208, 208, 0.3);
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 100vh;
+     width: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     pointer-events:none;
+     opacity: 0;
+ }
+ .modal{
+     background-color: rgb(240, 227, 227);
+     border-radius: 5px;
+     padding: 30px 20px;
+     width: 300px;
+     max-width: 100%;
+     text-align: center;
+ }
+.modal-container .show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+/******modal :end*****/
+@media(max-width:540px) {
+    .card {
+        max-width: 70%;
+        height: 238px;
+        background: #fff;
+        border: 1px solid #ccc;
+        margin: auto;
+    }
+}
